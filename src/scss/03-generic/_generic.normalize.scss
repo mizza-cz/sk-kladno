@@ -34,7 +34,11 @@ html {
 html:focus-within {
   scroll-behavior: smooth;
 }
-
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
 /* Set core body defaults */
 body {
   min-height: 100vh;
