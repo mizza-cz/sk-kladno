@@ -1,0 +1,60 @@
+.partnersSlider {
+  padding-top: 52px;
+  padding-bottom: 72px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  h5,
+  h6 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: "Teko", sans-serif;
+  }
+
+  h6 {
+    margin-bottom: 24px;
+  }
+  &__inner {
+    margin-top: 24px;
+  }
+  &__item {
+    display: block;
+
+    padding: 0 10px;
+    img {
+      max-height: 80px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  &__top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--color-blue-200);
+    margin-top: 32px;
+    margin-bottom: 48px;
+    a {
+      height: 54px;
+      display: block;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

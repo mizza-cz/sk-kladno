@@ -1,0 +1,16 @@
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: var(--color-blue-400);
+  height: 32px;
+  padding: 0 12px;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  border-radius: 32px;
+  color: var(--color-light);
+
+}

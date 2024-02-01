@@ -1,0 +1,43 @@
+.hp-social {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: var(--color-blue-900);
+      img {
+        transform: scale(1.05);
+      }
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      display: block;
+      color: var(--color-blue-900);
+    }
+  }
+  &__img {
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 12px;
+    .tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+  }
+}

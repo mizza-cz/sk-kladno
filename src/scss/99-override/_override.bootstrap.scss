@@ -1,0 +1,65 @@
+/*! purgecss start ignore */
+.container {
+  max-width: 1580px !important;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 10px 44px 10px 16px;
+  display: block;
+  width: fit-content;
+  letter-spacing: 0.25px;
+  position: relative;
+  border: none;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    background-image: url("../images/ico/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+  }
+}
+.btn-primary {
+  background-color: var(--color-blue-400);
+  &:hover {
+    background-color: var(--color-blue-500);
+  }
+}
+.btn-dark {
+  background-color: var(--color-blue-500);
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  &::before {
+    display: none;
+  }
+  span {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding-right: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0px;
+      top: 3px;
+      background-image: url("../images/ico/arrow-right.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &:hover {
+    background-color: var(--color-blue-400);
+  }
+}
+
+/*! purgecss end ignore */
