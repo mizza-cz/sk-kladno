@@ -9,9 +9,9 @@ $(".partnersSlider__inner").slick({
   speed: 2000,
   autoplay: false,
   prevArrow:
-    '<button class="slider__btn slider__btnprev"><img src="/images/ico/arrow-right.svg" loading="lazy" alt="" /></button>',
+    '<button class="slider__btn slider__btnprev"><img src="./images/ico/arrow-right.svg" loading="lazy" alt="" /></button>',
   nextArrow:
-    '<button class="slider__btn slider__btnnext"><img src="/images/ico/arrow-right.svg" loading="lazy" alt="" /></button>',
+    '<button class="slider__btn slider__btnnext"><img src="./images/ico/arrow-right.svg" loading="lazy" alt="" /></button>',
   responsive: [
     {
       breakpoint: 1401,
