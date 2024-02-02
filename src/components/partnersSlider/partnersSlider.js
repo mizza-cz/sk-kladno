@@ -1,32 +1,40 @@
 $(".partnersSlider__inner").slick({
   dots: false,
   infinite: true,
-  arrows: false,
+  arrows: true,
   draggable: true,
 
-  slidesToShow: 7,
+  slidesToShow: 5,
   slidesToScroll: 1,
   speed: 2000,
-  autoplay: true,
+  autoplay: false,
+  prevArrow:
+    '<button class="slider__btn slider__btnprev"><img src="/images/ico/arrow-right.svg" loading="lazy" alt="" /></button>',
+  nextArrow:
+    '<button class="slider__btn slider__btnnext"><img src="/images/ico/arrow-right.svg" loading="lazy" alt="" /></button>',
   responsive: [
     {
-      breakpoint: 1201,
+      breakpoint: 1401,
       settings: {
-        slidesToShow: 6,
+        slidesToShow: 3,
         slidesToScroll: 4,
       },
     },
     {
-      breakpoint: 750,
+      breakpoint: 1000,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 3,
+        arrows: false,
+        autoplay: true,
       },
     },
     {
-      breakpoint: 570,
+      breakpoint: 900,
       settings: {
+        arrows: false,
         slidesToShow: 2,
+        autoplay: true,
         slidesToScroll: 2,
       },
     },

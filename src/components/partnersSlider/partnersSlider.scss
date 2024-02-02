@@ -23,6 +23,8 @@
   }
   &__inner {
     margin-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   &__item {
     display: block;
@@ -55,6 +57,38 @@
         height: 100%;
         object-fit: contain;
       }
+    }
+  }
+
+  .slider__btn {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: var(--color-blue-500);
+    border-radius: 8px;
+    border: none;
+    top: 25%;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .slider__btnprev {
+    left: -32px;
+    transform: rotate(-180deg);
+    @include media-breakpoint-down(xxl) {
+      left: 0;
+    }
+  }
+  .slider__btnnext {
+    right: -32px;
+    @include media-breakpoint-down(xxl) {
+      right: 0;
     }
   }
 }

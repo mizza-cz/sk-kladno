@@ -1,10 +1,14 @@
 .main {
-  background-image: url("../images/content/bg.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 2400px 1400px;
-  background-color: var(--color-50);
+  //   background-image: url("../images/content/bg.png");
+  //   background-repeat: no-repeat;
+  //   background-position: center top;
+  //   background-size: 2400px 1400px;
+  //   background-color: var(--color-50);
   padding-bottom: 68px;
+  padding-top: 88px;
+  @include media-breakpoint-down(xl) {
+    padding-top: 62px;
+  }
   @include media-breakpoint-down(lg) {
     padding-bottom: 40px;
   }

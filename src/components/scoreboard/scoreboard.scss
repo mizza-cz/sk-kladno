@@ -11,6 +11,8 @@
     background-color: var(--color-blue-900);
     padding-left: 16px;
     padding-right: 16px;
+    display: flex;
+    flex-direction: column;
   }
   &__date {
     font-family: "Teko", sans-serif;
@@ -51,8 +53,9 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     justify-content: center;
+    margin-top: auto;
   }
   &__logo {
     width: 90px;
