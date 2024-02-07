@@ -20,19 +20,10 @@ $(".partnersSlider__inner").slick({
         slidesToScroll: 4,
       },
     },
-    {
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows: false,
-        autoplay: true,
-      },
-    },
+
     {
       breakpoint: 900,
       settings: {
-        arrows: false,
         slidesToShow: 2,
         autoplay: true,
         slidesToScroll: 2,

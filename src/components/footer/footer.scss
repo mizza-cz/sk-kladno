@@ -31,7 +31,6 @@
     }
   }
   &__bottom {
-    width: 100%;
     //  display: flex;
     //  justify-content: space-between;
     padding-bottom: 52px;
@@ -102,7 +101,7 @@
   margin-left: auto;
   @include media-breakpoint-down(md) {
     position: absolute;
-    right: 0;
+    right: 18px;
     top: 0;
   }
   &:hover {

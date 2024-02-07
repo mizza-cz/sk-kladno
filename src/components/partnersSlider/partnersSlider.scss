@@ -23,8 +23,12 @@
   }
   &__inner {
     margin-top: 24px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   &__item {
     display: block;
@@ -72,23 +76,19 @@
     border-radius: 8px;
     border: none;
     top: 25%;
-
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
     img {
       width: 20px;
       height: 20px;
     }
   }
   .slider__btnprev {
-    left: -32px;
+    left: 0px;
     transform: rotate(-180deg);
-    @include media-breakpoint-down(xxl) {
-      left: 0;
-    }
   }
   .slider__btnnext {
-    right: -32px;
-    @include media-breakpoint-down(xxl) {
-      right: 0;
-    }
+    right: 0;
   }
 }

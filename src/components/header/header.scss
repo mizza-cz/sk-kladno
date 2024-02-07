@@ -18,6 +18,12 @@
       height: 80px;
       top: 10px;
       left: 16px;
+      @include media-breakpoint-down(xl) {
+        top: -14px;
+        width: 66px;
+        left: 12px;
+        height: 66px;
+      }
     }
   }
   .container {
