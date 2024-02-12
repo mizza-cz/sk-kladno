@@ -57,9 +57,12 @@
     gap: 12px;
     a {
       display: block;
-      width: 20px;
-      height: 20px;
+
       transition: all 0.3s;
+      svg {
+        height: 20px;
+        display: block;
+      }
       &:hover {
         transform: scale(1.1);
       }
