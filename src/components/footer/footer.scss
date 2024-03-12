@@ -10,6 +10,8 @@
     @include media-breakpoint-down(md) {
       margin-bottom: 40px;
       padding-bottom: 32px;
+      position: relative;
+      padding-top: 120px;
     }
 
     align-items: flex-end;
@@ -70,6 +72,9 @@
     @include media-breakpoint-down(md) {
       width: 100px;
       height: 100px;
+      order: -1;
+      position: absolute;
+      top: 0;
     }
     &:hover {
       transform: scale(1.05);
